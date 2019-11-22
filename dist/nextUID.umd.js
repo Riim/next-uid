@@ -1,8 +1,8 @@
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
 	typeof define === 'function' && define.amd ? define(['exports'], factory) :
-	(global = global || self, factory(global['@riim/uid'] = {}));
-}(this, function (exports) { 'use strict';
+	(global = global || self, factory(global['@riim/next-uid'] = {}));
+}(this, (function (exports) { 'use strict';
 
 	const hasOwn = Object.prototype.hasOwnProperty;
 	let uidCounter = 0;
@@ -19,4 +19,4 @@
 
 	Object.defineProperty(exports, '__esModule', { value: true });
 
-}));
+})));

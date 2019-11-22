@@ -2,12 +2,12 @@ import tslint from 'rollup-plugin-tslint';
 import typescript from 'rollup-plugin-typescript2';
 
 export default {
-	input: './src/index.ts',
+	input: './src/nextUID.ts',
 
 	output: {
-		file: './dist/uid.umd.js',
+		file: './dist/nextUID.umd.js',
 		format: 'umd',
-		name: '@riim/uid'
+		name: '@riim/next-uid'
 	},
 
 	plugins: [
